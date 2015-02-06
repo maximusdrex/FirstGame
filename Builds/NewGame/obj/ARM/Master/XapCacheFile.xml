@@ -1,0 +1,29 @@
+﻿<xapCache source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\Bin\ARM\Master\NewGame_Master_ARM.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="2/5/2015 5:32:32 PM">
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\obj\ARM\Master\NewGame.dll" archivePath="NewGame.dll" lastWriteTime="2/5/2015 5:32:28 PM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="1/6/2014 8:31:44 AM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="1/6/2014 8:31:44 AM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="1/6/2014 8:31:44 AM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="1/6/2014 8:31:44 AM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="1/6/2014 8:31:44 AM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="1/6/2014 8:31:44 AM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\Data\mainData" archivePath="Data\mainData" lastWriteTime="2/5/2015 5:32:21 PM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\Data\managedAssemblies.txt" archivePath="Data\managedAssemblies.txt" lastWriteTime="2/5/2015 5:32:27 PM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\Data\Resources\unity default resources" archivePath="Data\Resources\unity default resources" lastWriteTime="1/12/2014 3:10:28 AM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\Data\Resources\unity_builtin_extra" archivePath="Data\Resources\unity_builtin_extra" lastWriteTime="2/5/2015 5:32:22 PM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\Data\sharedassets0.assets" archivePath="Data\sharedassets0.assets" lastWriteTime="2/5/2015 5:32:22 PM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\Bin\ARM\Master\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2/4/2015 9:19:41 PM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\Bin\ARM\Master\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="1/6/2014 8:31:44 AM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\Bin\ARM\Master\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="1/6/2014 8:31:44 AM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\Assembly-CSharp.dll" archivePath="Assembly-CSharp.dll" lastWriteTime="2/5/2015 5:32:27 PM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\Players\ARM\Master\BridgeInterface.winmd" archivePath="BridgeInterface.winmd" lastWriteTime="1/22/2014 4:46:50 PM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\UnityEngine.dll" archivePath="UnityEngine.dll" lastWriteTime="2/5/2015 5:32:25 PM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\Players\ARM\Master\UnityEngineDelegates.winmd" archivePath="UnityEngineDelegates.winmd" lastWriteTime="1/22/2014 4:46:52 PM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\Players\ARM\Master\UnityEngineProxy.dll" archivePath="UnityEngineProxy.dll" lastWriteTime="1/22/2014 4:46:54 PM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\Players\ARM\Master\UnityPlayer.winmd" archivePath="UnityPlayer.winmd" lastWriteTime="1/22/2014 4:53:42 PM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\Players\ARM\Master\WinRTBridge.dll" archivePath="WinRTBridge.dll" lastWriteTime="1/22/2014 4:46:54 PM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\WinRTLegacy.dll" archivePath="WinRTLegacy.dll" lastWriteTime="2/5/2015 5:32:26 PM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\Players\ARM\Master\BridgeInterface.dll" archivePath="BridgeInterface.dll" lastWriteTime="1/22/2014 4:46:50 PM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\Players\ARM\Master\UnityEngineDelegates.dll" archivePath="UnityEngineDelegates.dll" lastWriteTime="1/22/2014 4:46:52 PM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\Players\ARM\Master\UnityPlayer.dll" archivePath="UnityPlayer.dll" lastWriteTime="1/22/2014 4:54:10 PM" />
+  <file source="C:\Users\Maxwell\Documents\New Game\Builds\NewGame\Bin\ARM\Master\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2/4/2015 9:19:42 PM" />
+</xapCache>
