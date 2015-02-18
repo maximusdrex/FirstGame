@@ -16,6 +16,7 @@ public class Player2Script : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        //keep player rotated correctly
         transform.rotation = Quaternion.AngleAxis(0, Vector3.forward);
         HandleTouch();
     }
@@ -44,19 +45,18 @@ public class Player2Script : MonoBehaviour
                 movex = -1;
             }
 
-            if (TestGrounded() && touch.position.y > (Screen.height / 3) * 2 && touch.position.x >= Screen.height / 2)
+            if (fuel >= 1 && touch.position.y > (Screen.height / 3) * 2 && touch.position.x >= Screen.height / 2)
             {
                 movey = jumpHeight;
+                fuel--;
             }
-
+            else
+            {
+                //f signifies float
+                fuel += 0.5f;
+            }
+            //change vector
             rigidbody2D.velocity = new Vector2(movex * Speed, movey);
         }
-    }
-
-    public bool TestGrounded()
-    {
-        bool isGrounded = false;
-		isGrounded = Physics2D.Linecast(transform.position, Player2Ground.transform.position, 1 << LayerMask.NameToLayer("Platforms"));
-		return isGrounded;
     }
 }
