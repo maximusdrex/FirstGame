@@ -1,11 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player2Script.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Particles.cs">
     <Files>
-      <File FileName="Assets\Scripts\ExitsWorld.cs" Line="10" Column="19" />
-      <File FileName="Assets\Scripts\Player1Script.cs" Line="20" Column="27" />
+      <File FileName="Assets\Scripts\Player2Script.cs" Line="8" Column="1" />
+      <File FileName="Assets\Scripts\Player1Script.cs" Line="54" Column="61" />
+      <File FileName="Assets\Scripts\ExitsWorld.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GameLoads.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player2Script.cs" Line="31" Column="18" />
+      <File FileName="Assets\Scripts\OneP.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Particles.cs" Line="6" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

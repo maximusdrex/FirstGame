@@ -12,6 +12,7 @@ public class ExitsWorld : MonoBehaviour {
         Vector2 spawnPoint1 = new Vector2(p1x, py);
         Vector2 spawnPoint2 = new Vector2(p2x, py);
         GameObject obj = other.transform.parent.gameObject;
+
         if(obj.name == "Player filler") 
         {
             obj.transform.position = spawnPoint1;
