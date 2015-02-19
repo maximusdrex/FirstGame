@@ -47,8 +47,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ExitsWorld.cs" />
-     <Compile Include="Assets\Scripts\GameLoads.cs" />
-     <Compile Include="Assets\Scripts\OneP.cs" />
      <Compile Include="Assets\Scripts\Particles.cs" />
      <Compile Include="Assets\Scripts\Player1Script.cs" />
      <Compile Include="Assets\Scripts\Player2Script.cs" />

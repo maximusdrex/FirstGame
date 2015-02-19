@@ -471,8 +471,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 293388106}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0189999994, y: .35800001, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: .00330034015, w: .999994576}
+  m_LocalPosition: {x: -.0190000962, y: .357999951, z: 0}
   m_LocalScale: {x: 3.5, y: 3.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1555019534}
@@ -2375,6 +2375,7 @@ GameObject:
   - 61: {fileID: 1555019531}
   - 114: {fileID: 1555019535}
   - 58: {fileID: 1555019536}
+  - 95: {fileID: 1555019537}
   m_Layer: 10
   m_Name: Player filler 2
   m_TagString: Untagged
@@ -2474,6 +2475,21 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_Radius: .204181463
   m_Center: {x: .0299999993, y: .74000001}
+--- !u!95 &1555019537
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1555019530}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 41ea068f0c3007c48a014120f91d9e0f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1708771585
 GameObject:
   m_ObjectHideFlags: 0
@@ -2533,6 +2549,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1779242124}
   - 212: {fileID: 1779242125}
+  - 95: {fileID: 1779242126}
   m_Layer: 0
   m_Name: Player front arm
   m_TagString: Untagged
@@ -2546,8 +2563,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1779242123}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0879999995, y: .368000001, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -.0474179015, w: .998875141}
+  m_LocalPosition: {x: -.0909999982, y: .32100001, z: 0}
   m_LocalScale: {x: 3.5, y: 3.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1555019534}
@@ -2574,6 +2591,21 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300022, guid: fe8edbdaa7b64274cbd6713adf7baab1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!95 &1779242126
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1779242123}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 19f38ed8718ec6e4f86bf6072ded39ef, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1815904531
 GameObject:
   m_ObjectHideFlags: 0
@@ -2769,7 +2801,7 @@ GameObject:
   - 4: {fileID: 1882868167}
   - 212: {fileID: 1882868166}
   - 61: {fileID: 1882868165}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
