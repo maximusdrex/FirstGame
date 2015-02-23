@@ -335,6 +335,7 @@ GameObject:
   - 95: {fileID: 223841188}
   - 61: {fileID: 223841189}
   - 58: {fileID: 223841182}
+  - 61: {fileID: 223841186}
   m_Layer: 10
   m_Name: Player filler
   m_TagString: Untagged
@@ -408,6 +409,17 @@ Transform:
   - {fileID: 1997901104}
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!61 &223841186
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 223841181}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .585270107, y: 1.12324643}
+  m_Center: {x: -.0263723023, y: .427549362}
 --- !u!114 &223841187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,9 +431,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9fa4bdf6ad22ef458ea6e234bc76e99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Battery: {fileID: 0}
+  FuelPercentText: {fileID: 1501952270}
   particles: {fileID: 665494555}
-  anim: {fileID: 223841188}
+  MyAnimator: {fileID: 223841188}
 --- !u!95 &223841188
 Animator:
   serializedVersion: 3
@@ -3418,7 +3430,7 @@ GameObject:
   - 222: {fileID: 1501952271}
   - 114: {fileID: 1501952270}
   m_Layer: 11
-  m_Name: Image
+  m_Name: Fuel1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3432,19 +3444,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1501952269}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: 99bf4015c98b9e14b80136845f65ad53, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Error
 --- !u!222 &1501952271
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3463,10 +3480,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1871615390}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 67, y: 91}
-  m_SizeDelta: {x: 15, y: 45}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 159, y: -55}
+  m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &1507160175
 GameObject:
@@ -3543,6 +3560,8 @@ GameObject:
   - 61: {fileID: 1555019531}
   - 114: {fileID: 1555019535}
   - 58: {fileID: 1555019536}
+  - 95: {fileID: 1555019537}
+  - 61: {fileID: 1555019538}
   m_Layer: 10
   m_Name: Player filler 2
   m_TagString: Untagged
@@ -3627,8 +3646,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a839c4dd94377a42b38f95e67c7b73e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Battery: {fileID: 2023950589}
+  FuelPercentText: {fileID: 2023950589}
   particles: {fileID: 719142234}
+  MyAnimator: {fileID: 1555019537}
 --- !u!58 &1555019536
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3640,6 +3660,32 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_Radius: .204181463
   m_Center: {x: .0299999993, y: .74000001}
+--- !u!95 &1555019537
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1555019530}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 41ea068f0c3007c48a014120f91d9e0f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!61 &1555019538
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1555019530}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .585270107, y: 1.12324643}
+  m_Center: {x: 0, y: .427549362}
 --- !u!1 &1708771585
 GameObject:
   m_ObjectHideFlags: 0
@@ -3954,6 +4000,7 @@ GameObject:
   - 4: {fileID: 1882868167}
   - 212: {fileID: 1882868166}
   - 61: {fileID: 1882868165}
+  - 114: {fileID: 1882868168}
   m_Layer: 10
   m_Name: Ball
   m_TagString: Untagged
@@ -4006,6 +4053,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1882868168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1882868164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cc7c7e6ac63f4e4680ca69c5d138198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1917951127
 GameObject:
   m_ObjectHideFlags: 0
@@ -4167,7 +4225,7 @@ GameObject:
   - 222: {fileID: 2023950590}
   - 114: {fileID: 2023950589}
   m_Layer: 11
-  m_Name: Image2
+  m_Name: Fuel2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4185,10 +4243,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1871615390}
   m_RootOrder: 1
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 887, y: 91}
-  m_SizeDelta: {x: 15, y: 45}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -163, y: -59}
+  m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &2023950589
 MonoBehaviour:
@@ -4198,19 +4256,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 2023950587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: 99bf4015c98b9e14b80136845f65ad53, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 2
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Error
 --- !u!222 &2023950590
 CanvasRenderer:
   m_ObjectHideFlags: 0
