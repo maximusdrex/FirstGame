@@ -6,6 +6,8 @@ public class Player2Script : PlayerController2d
 {
     protected override void oneTouch(int TouchNum)
     {
+        float YPosition = transform.position.y;
+        float XPosition = transform.position.x;
 		float movex = Input.GetAxis("Horizontal");
 		float movey = Input.GetAxis("Vertical");
         Touch touch = Input.GetTouch(TouchNum);
@@ -17,11 +19,11 @@ public class Player2Script : PlayerController2d
 
         if (touch.position.x > (Screen.width / 4) * 3)
         {
-            movex = 1f;
+            transform.position = new Vector2(XPosition + Speed, YPosition);
         }
         else if (touch.position.x >= Screen.width / 2 && touch.position.x <= (Screen.width / 4) * 3)
         {
-            movex = -1f;
+            transform.position = new Vector2(XPosition - Speed, YPosition);
         }
 
         if (FuelCheck() && touch.position.y > (Screen.height / 3) * 2 && touch.position.x >= Screen.height / 2)
@@ -37,7 +39,7 @@ public class Player2Script : PlayerController2d
             WasJumping = false;
         }
         //change vector
-        rigidbody2D.velocity = new Vector2(movex * Speed, movey);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(movex, movey);
     }
 
     protected override void InWorldCheck()

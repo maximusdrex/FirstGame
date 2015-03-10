@@ -3,18 +3,16 @@ using UnityEngine.UI;
 using System.Collections;
 
 public abstract class PlayerController2d : MonoBehaviour {
+    protected float Speed = 0.1f;
+    //players fuel
+    protected float Fuel = 100;
+    protected float JumpHeight = 4;
+    protected bool WasJumping = false;
     //fuel indicator
     public Text FuelPercentText = null;
     //jetpack smoke
     public ParticleSystem particles = null;
-    //players fuel
-    protected float Fuel = 100;
-    //handles the players animations
-    public Animator MyAnimator = null;
-    protected float Speed = 5;
-    protected float JumpHeight = 4;
-    protected bool WasJumping = false;
-    private bool hasBall = false;
+    public bool HasBall = false;
 
     // Use this for initialization
     void Start()
@@ -36,7 +34,6 @@ public abstract class PlayerController2d : MonoBehaviour {
         transform.rotation = Quaternion.AngleAxis(0, Vector3.forward);
         KeepBall();
         float movex = Input.GetAxis("Horizontal");
-        MyAnimator.SetFloat("Speed", Mathf.Abs(movex));
     }
 
     /// <summary>
@@ -76,18 +73,32 @@ public abstract class PlayerController2d : MonoBehaviour {
         Debug.Log("It Worked");
         GameObject Ball;
         Ball = GameObject.Find("Ball");
-        Ball.transform.position = new Vector2(transform.position.x, transform.position.y + 1.5f);
-        hasBall = true;
+        Ball.transform.position = new Vector2(transform.position.x, transform.position.y + 2);
+        HasBall = true;
+        if (this.name == "Player filler")
+        {
+            GameObject.Find("Player filler 2").GetComponent<PlayerController2d>().LostBall();
+        }
+        else
+        {
+            GameObject.Find("Player filler").GetComponent<PlayerController2d>().LostBall();
+
+        }
     }
 
     protected void KeepBall()
     {
-        if (hasBall)
+        if (HasBall)
         {
             GameObject Ball;
             Ball = GameObject.Find("Ball");
-            Ball.transform.position = new Vector2(transform.position.x, transform.position.y + 1.5f);
+            Ball.transform.position = new Vector2(transform.position.x, transform.position.y + 2);
         }
+    }
+
+    public void LostBall()
+    {
+        HasBall = false;
     }
 
 

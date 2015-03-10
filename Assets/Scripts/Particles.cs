@@ -6,7 +6,7 @@ public class Particles : MonoBehaviour {
 	public string LayerName = "Particles";
 
 	void Start () {
-        particleSystem.renderer.sortingLayerName = LayerName;
+        GetComponent<ParticleSystem>().GetComponent<Renderer>().sortingLayerName = LayerName;
 	}
 
 }

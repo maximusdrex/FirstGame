@@ -433,7 +433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FuelPercentText: {fileID: 1501952270}
   particles: {fileID: 665494555}
-  MyAnimator: {fileID: 223841188}
+  HasBall: 0
 --- !u!95 &223841188
 Animator:
   serializedVersion: 3
@@ -520,6 +520,7 @@ GameObject:
   - 4: {fileID: 309083405}
   - 212: {fileID: 309083404}
   - 61: {fileID: 309083406}
+  - 114: {fileID: 309083407}
   m_Layer: 0
   m_Name: GOAL2
   m_TagString: Untagged
@@ -572,6 +573,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: .204091877, y: .243930578}
   m_Center: {x: .000737190247, y: -.0280347466}
+--- !u!114 &309083407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 309083403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc064a5f36c38e468f7cf77fd60f342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyPlayerName: Player filler
 --- !u!1 &437311205
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,6 +707,7 @@ GameObject:
   - 4: {fileID: 528169284}
   - 212: {fileID: 528169283}
   - 61: {fileID: 528169285}
+  - 114: {fileID: 528169286}
   m_Layer: 0
   m_Name: GOAL1
   m_TagString: Untagged
@@ -746,6 +760,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: .200000003, y: .251710594}
   m_Center: {x: 0, y: -.0242812037}
+--- !u!114 &528169286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 528169282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adc064a5f36c38e468f7cf77fd60f342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyPlayerName: Player filler 2
 --- !u!1 &543692761
 GameObject:
   m_ObjectHideFlags: 0
@@ -3159,7 +3185,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
     m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
@@ -3322,7 +3348,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -3450,7 +3476,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -3509,7 +3535,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1507160175}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.8561902, y: -2.93011284, z: 0}
+  m_LocalPosition: {x: 4.69000006, y: -2.93000007, z: 0}
   m_LocalScale: {x: 2.5, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1842445184}
@@ -3648,7 +3674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FuelPercentText: {fileID: 2023950589}
   particles: {fileID: 719142234}
-  MyAnimator: {fileID: 1555019537}
+  HasBall: 0
 --- !u!58 &1555019536
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4048,7 +4074,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1882868164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .101268768, y: 1.45863736, z: 0}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1.37953818, y: 1.37953222, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4262,7 +4288,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -4304,7 +4330,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2069271278}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.40731788, y: -1.20570552, z: 1}
+  m_LocalPosition: {x: 1.20000005, y: -1.21000004, z: 1}
   m_LocalScale: {x: 2.5, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1842445184}
@@ -4342,3 +4368,30 @@ SpriteRenderer:
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 925304eff5a8e5d4ab77513831080fce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &2105950620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2105950621}
+  m_Layer: 0
+  m_Name: Data
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2105950621
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2105950620}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
