@@ -39,7 +39,7 @@ public class CountDown : MonoBehaviour {
         {
             winner = tie;
         }
-        GameObject.Find("Data").GetComponent<DataHolder>().winner = winner;
-        Application.LoadLevel("");
+        PlayerPrefs.SetString("winner", winner);
+        Application.LoadLevel("Game Over");
     }
 }
